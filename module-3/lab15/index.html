@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="lab15">
+<head>
+	<title>Show</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div ng-controller="LabController">
+     <button ng-click="triggerButton()" ng-show="hider_btn1" >Ocultar texto</button>
+        <button ng-click="triggerButton2()" ng-show="hider_btn2" >Mostrar texto</button>
+		<div ng-show="revealP">
+       
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in metus dui. Cras aliquam eget arcu iaculis venenatis. Ut fermentum tellus et libero sagittis accumsan. Vestibulum pellentesque hendrerit nisl, ut interdum dolor scelerisque quis. Duis aliquet nec lacus eu tincidunt. Ut efficitur fermentum elit, et porttitor sapien venenatis non. Curabitur ac massa fringilla, consequat ante accumsan, ornare ex. Vivamus placerat velit vitae ultrices tincidunt. Quisque aliquet scelerisque metus nec euismod. Integer convallis urna nec varius porttitor.</p>
+		</div>
+
+		
+	</div>
+	<script type="text/javascript" src="../assets/angular.min.js"></script>
+
+	<script type="text/javascript">
+
+	angular.module('lab15', [])
+		   .controller('LabController', function($scope){
+		   		$scope.revealP = true;
+				$scope.hider_btn2 = false;
+				$scope.hider_btn1 = true;
+		   		
+
+		   		$scope.triggerButton = function(){
+		   			$scope.revealP = false;
+					$scope.hider_btn2 = true;
+				$scope.hider_btn1 = false;
+					
+		   			
+		   		};
+				
+				$scope.triggerButton2 = function(){
+		   			$scope.revealP = true;
+					$scope.hider_btn2 = false;
+				$scope.hider_btn1 = true;
+					
+		   			
+		   		};
+				
+				
+
+		   });
+	</script>
+
+
+</body>
+</html>
