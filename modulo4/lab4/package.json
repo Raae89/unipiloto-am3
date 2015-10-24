@@ -1,0 +1,19 @@
+{
+  "name": "lab4",
+  "version": "1.0.0",
+  "description": "Lab 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raae89/unipiloto-am3.git"
+  },
+  "author": "Ricardo Ardila",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Raae89/unipiloto-am3/issues"
+  },
+  "homepage": "https://github.com/Raae89/unipiloto-am3#readme"
+}
