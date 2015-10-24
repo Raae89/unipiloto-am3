@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Raae89/unipiloto-am3/issues"
   },
-  "homepage": "https://github.com/Raae89/unipiloto-am3#readme"
+  "homepage": "https://github.com/Raae89/unipiloto-am3#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }
